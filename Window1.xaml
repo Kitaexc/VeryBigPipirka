@@ -1,0 +1,28 @@
+﻿<Window x:Class="VeryBigPipirka.Window1"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VeryBigPipirka"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="621,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" FontSize="24" FontFamily="Bahnschrift Light SemiCondensed"><Run Language="ru-ru" Text="Администратор"/></TextBlock>
+        <Frame x:Name="InTable" Content=""  HorizontalAlignment="Center" Height="380" Margin="0,44,0,0" VerticalAlignment="Top" Width="780" NavigationUIVisibility="Hidden"/>
+        <materialDesign:PackIcon Kind="Account" Margin="594,10,0,0" Height="29" Width="22" />
+        <TextBlock x:Name="Info" HorizontalAlignment="Center" Height="136" Margin="0,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="438" FontSize="14"><Run Text="Вы зашли за пользователя &quot;Администратор&quot;, данный пользователь может управлять всеми таблицами, добавлять и удалять товар, регистрировать новых пользователей. "/><Run Language="ru-ru" Text="Для начала использования функционала тыкните на выпадающий список выше."/></TextBlock>
+        <Button x:Name="Exit" Content="Выйти" HorizontalAlignment="Left" Height="43" Margin="10,356,0,0" VerticalAlignment="Top" Width="130" Click="Exit_Click"/>
+        <ComboBox x:Name="Spisok" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="570" materialDesign:HintAssist.Hint="Тыкни на меня :D" FontSize="14" SelectionChanged="Spisok_SelectionChanged">
+            <ComboBoxItem Content="Главный экран"/>
+            <ComboBoxItem Content="Роль пользователя"/>
+            <ComboBoxItem Content="Данные сотрудника"/>
+            <ComboBoxItem Content="Данные для авторизации"/>
+            <ComboBoxItem Content="Данные для оплаты"/>
+        </ComboBox>
+        <Button x:Name="bek" Content="Бекап" HorizontalAlignment="Left" Height="43" Margin="640,356,0,0" VerticalAlignment="Top" Width="130" Click="bek_Click"/>
+        <Button x:Name="Kassa" Content="Таблицы кассира" HorizontalAlignment="Left" Height="43" Margin="181,356,0,0" VerticalAlignment="Top" Width="214" Click="Kassa_Click"/>
+        <Button x:Name="Manager" Content="Таблицы складмена" HorizontalAlignment="Left" Height="43" Margin="400,356,0,0" VerticalAlignment="Top" Width="205" Click="Manager_Click"/>
+
+    </Grid>
+</Window>

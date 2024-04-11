@@ -1,0 +1,25 @@
+﻿<Window x:Class="VeryBigPipirka.Window2"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VeryBigPipirka"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="593,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" FontSize="24" FontFamily="Bahnschrift Light SemiCondensed"><Run Language="ru-ru" Text="Склад - менеджер"/></TextBlock>
+        <Frame x:Name="InTable" Content=""  HorizontalAlignment="Center" Height="380" Margin="0,44,0,0" VerticalAlignment="Top" Width="780" NavigationUIVisibility="Hidden"/>
+        <materialDesign:PackIcon Kind="Account" Margin="563,10,0,0" Height="29" Width="25" />
+        <TextBlock x:Name="Info" HorizontalAlignment="Center" Height="136" Margin="0,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="438" FontSize="14" Text="Вы зашли за пользователя &quot;Склад Менеджер&quot;. Данный пользователь имеет доступ к управлению складскими операциями, включая учет поступления и отгрузки товаров, а также управление запасами. Для начала использования функционала выберите соответствующий раздел из выпадающего списка выше."/>
+        <Button x:Name="Exit" Content="Выйти" HorizontalAlignment="Left" Height="43" Margin="10,356,0,0" VerticalAlignment="Top" Width="130" Click="Exit_Click"/>
+        <ComboBox x:Name="Spisok" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="548" materialDesign:HintAssist.Hint="Тыкни на меня :D" FontSize="14" SelectionChanged="Spisok_SelectionChanged">
+            <ComboBoxItem Content="Главный экран"/>
+            <ComboBoxItem Content="Категория продукта"/>
+            <ComboBoxItem Content="Изменения цен"/>
+            <ComboBoxItem Content="Фотография продукта"/>
+            <ComboBoxItem Content="Продукты"/>
+        </ComboBox>
+
+    </Grid>
+</Window>

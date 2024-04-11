@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cabd03781c934adc825d13707d48c262" Name="Diagram1" ZoomLevel="143">
+        <EntityTypeShape EntityType="UNLV_CORPORATIONModel.Authorisation" Width="1.5" PointX="3.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UNLV_CORPORATIONModel.Cheque" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UNLV_CORPORATIONModel.Cities" Width="1.5" PointX="3.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UNLV_CORPORATIONModel.Orders" Width="1.5" PointX="8.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UNLV_CORPORATIONModel.OrderStatus" Width="1.5" PointX="6" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UNLV_CORPORATIONModel.PaymentMethod" Width="1.5" PointX="3.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UNLV_CORPORATIONModel.PriceHistory" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UNLV_CORPORATIONModel.ProductCategory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UNLV_CORPORATIONModel.ProductImage" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UNLV_CORPORATIONModel.Products" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UNLV_CORPORATIONModel.Roles" Width="1.5" PointX="1.5" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UNLV_CORPORATIONModel.ShippingAddress" Width="1.5" PointX="6" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UNLV_CORPORATIONModel.Users" Width="1.5" PointX="6" PointY="13.75" IsExpanded="true" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__Authorisa__Role___398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__Users__Authorisa__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__Cheque__Order_ID__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__Cheque__Product___59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__ShippingA__City___4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__Orders__Address___5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__Orders__OrderSta__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__Orders__Product___5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__Orders__User_ID__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__Users__PaymentMe__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__Products__PriceH__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__Products__Catego__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__Products__Produc__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="UNLV_CORPORATIONModel.FK__Users__Role_ID__3F466844" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

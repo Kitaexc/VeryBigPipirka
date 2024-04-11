@@ -1,0 +1,28 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VeryBigPipirka"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      x:Class="VeryBigPipirka.Page1_1"
+      mc:Ignorable="d" 
+      d:DesignHeight="380" d:DesignWidth="780"
+      Title="Page1_1">
+
+    <Grid>
+        <DataGrid x:Name="ProductCategory" Margin="10,10,200,20" AutoGenerateColumns="False" CanUserAddRows="False" SelectionChanged="ProductCategory_SelectionChanged" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Категория продукта" Binding="{Binding CategoryName}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="edit" Width="185" VerticalAlignment="Top" Margin="585,245,0,0" Height="35" HorizontalAlignment="Left" FontSize="16" Content="Изменить" FontFamily="Bahnschrift Light SemiCondensed" Click="edit_Click"/>
+        <Button x:Name="create" Content="Добавить" HorizontalAlignment="Left" Height="35" Margin="585,325,0,0" VerticalAlignment="Top" Width="185" FontSize="16" FontFamily="Bahnschrift Light SemiCondensed" Click="create_Click"/>
+        <Button x:Name="delete" Content="Удалить" HorizontalAlignment="Left" Height="35" Margin="585,285,0,0" VerticalAlignment="Top" Width="185" RenderTransformOrigin="0.307,0.408" FontSize="16" FontFamily="Bahnschrift Light SemiCondensed" Click="delete_Click"/>
+        <TextBox x:Name="One" HorizontalAlignment="Left" Height="29" Margin="585,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" materialDesign:HintAssist.Hint="Столбец №1" Cursor="" FontFamily="Bahnschrift Light SemiCondensed" PreviewTextInput="One_PreviewTextInput"/>
+        <TextBox x:Name="Two" HorizontalAlignment="Left" Height="29" Margin="585,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" materialDesign:HintAssist.Hint="Столбец №2" Cursor="" FontFamily="Bahnschrift Light SemiCondensed" IsEnabled="False"/>
+        <ComboBox x:Name="Three" HorizontalAlignment="Left" Margin="585,78,0,0" Height="29" VerticalAlignment="Top" Width="185" materialDesign:HintAssist.Hint="Столбец №3" Cursor="" FontFamily="Bahnschrift Light SemiCondensed" IsEnabled="False"/>
+        <TextBox x:Name="Four" HorizontalAlignment="Left" Height="29" Margin="585,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" materialDesign:HintAssist.Hint="Столбец №4" Cursor="" FontFamily="Bahnschrift Light SemiCondensed" IsEnabled="False"/>
+        <TextBox x:Name="Five" HorizontalAlignment="Left" Height="29" Margin="585,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" materialDesign:HintAssist.Hint="Столбец №5" Cursor="" FontFamily="Bahnschrift Light SemiCondensed" IsEnabled="False"/>
+    </Grid>
+</Page>
